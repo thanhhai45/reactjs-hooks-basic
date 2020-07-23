@@ -1,6 +1,6 @@
 import React from 'react';
 import useMagicColor from '../../hooks/useMagicColor';
-
+import './MagicBox.scss'
 
 function MagicBox(props) {
   const color = useMagicColor();
