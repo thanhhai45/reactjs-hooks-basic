@@ -14,12 +14,13 @@ function Pagination(props) {
 	const { pagination, onPageChange } = props;
 	const { _page, _limit, _totalRows } = pagination;
 	const _totalPages = Math.ceil(_totalRows / _limit);
-	console.log(pagination)
+
 	function handlePageChange(newPage) {
 		if (onPageChange) {
 			onPageChange(newPage);
 		}
 	}
+	
 	return (
 		<div>
 			<button
@@ -38,4 +39,4 @@ function Pagination(props) {
 	);
 }
 
-export default Pagination;
+export default Pagination;  
